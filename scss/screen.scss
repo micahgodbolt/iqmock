@@ -1,0 +1,26 @@
+@import "base";
+@import "partials";
+@import "locations";
+@import "login";
+@import "header";
+@import "nav";
+@import "search";
+@import "layout";
+@import "articles";
+
+
+body {
+  overflow-x: hidden;
+  // background: lighten($grey, 10%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  @include box-sizing(border-box);
+}
+
+

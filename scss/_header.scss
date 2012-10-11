@@ -1,0 +1,50 @@
+header {
+  background: $red;
+  position: relative;
+  border-bottom: solid white 0.3em;
+  @extend .clearfix;
+}
+
+
+
+.iqlogo {
+  background-image: url(../img/iqlogo.png);
+  .svg & {
+    background-image: url(../img/iqlogo.svg);
+  }
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+header {
+  [class^="icon-"]{
+    float: right;
+    width: 17%;
+    max-width: 3em;
+    padding: 0.35em 0;
+    line-height: 1;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    span {
+     display: none;
+    }
+    &:before {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      content: attr(data-icon);
+      font-family: fontello;
+      speak: none;
+    }
+  }
+
+  .iqlogo {
+    max-width: 4em;
+    float: left;
+    margin: .3em 0 0 .5em;
+    height: 2.8em;
+    width: 3.5em;
+    @extend %ir;
+  }
+}

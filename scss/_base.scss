@@ -1,0 +1,7 @@
+@import "compass";
+@import "partials/normalize";
+
+@include font-face("fontello", font-files("fontello/fontello.ttf", "fontello/fontello.eot", "fontello/fontello.svg", "fontello/fontello.woff"));
+
+$grey: #b3b3b3;
+$red: #b5121b;
