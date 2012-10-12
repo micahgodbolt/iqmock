@@ -1,15 +1,8 @@
+
+
 .search {
-  border-bottom: solid white 1px;
   padding: 0.5em 0;
-  background: $grey;
-  height: 3.6em;
-  .iqlogo {
-    float: left;
-    margin-left: 3%;
-    height: 3em;
-    width: 3em;
-  }
-  input[type="text"] {
+ input[type="text"] {
     margin: 0;
     width: 70%;
     margin: 0 1%;
@@ -18,7 +11,40 @@
   input[type="submit"]{
     @extend %formsubmit;
     width: 25%;
- }
-
+  }
+  .mainnav & {
+    border-bottom: solid white 1px;
+    background: $grey;
+    height: 3.6em;
+  }
+  header > & {
+    // Search Container
+    float: left;
+    margin-top: .8em;
+    margin-left: 2%;
+    display: none;
+    @include respond-to('large') {
+      display: block;
+      width: 30%;
+    }
+    @include respond-to('desktop') {
+        width: 45%;
+    }
+    // Search Input
+    input[type='text'] {
+      width: 100%;
+       @include respond-to('desktop') {
+        width: 70%;
+      }
+    }
+    // Search Submit Button
+    input[type="submit"] {
+      display: none;
+      @include respond-to('desktop') {
+        display: inline-block;
+        background: $grey;
+      }
+    }
+  }
 }
 

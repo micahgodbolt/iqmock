@@ -1,27 +1,13 @@
+
+
 header {
-  background: $red;
-  position: relative;
+  @include background-image(linear-gradient(top, $red, darken($red,10%)));
   border-bottom: solid white 0.3em;
   @extend .clearfix;
-}
-
-
-
-.iqlogo {
-  background-image: url(../img/iqlogo.png);
-  .svg & {
-    background-image: url(../img/iqlogo.svg);
-  }
-  background-repeat: no-repeat;
-  background-size: contain;
-
-}
-
-header {
+  // icons
   [class^="icon-"]{
     float: right;
-    width: 17%;
-    max-width: 3em;
+    width: 18%;
     padding: 0.35em 0;
     line-height: 1;
     text-decoration: none;
@@ -31,6 +17,22 @@ header {
     span {
      display: none;
     }
+    @include respond-to('medium'){
+    border-left: 1px solid rgba(0,0,0,.2);
+      span{
+        display: block;
+        margin-top: .2em;
+        font-size: .5em;
+      }
+     }
+     @include respond-to('large') {
+      width: 13%;
+     }
+
+     @include respond-to('desktop') {
+      max-width: 3em;
+     }
+
     &:before {
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
       content: attr(data-icon);
@@ -40,11 +42,23 @@ header {
   }
 
   .iqlogo {
-    max-width: 4em;
+    max-width: 32%;
     float: left;
     margin: .3em 0 0 .5em;
-    height: 2.8em;
-    width: 3.5em;
+    height: 3.5em;
+    width: 4em;
+    background-repeat: no-repeat;
+    background-size: contain;
     @extend %ir;
+    background-image: url(../img/iqlogo.png);
+    .svg & {
+      background-image: url(../img/iqlogo.svg);
+    }
+    @include respond-to('medium'){
+      max-width: 32%;
+      margin: .3em 0 0 .5em;
+      height: 4.2em;
+      width: 5.2em;
+     }
   }
 }

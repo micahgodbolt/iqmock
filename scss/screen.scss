@@ -1,18 +1,36 @@
 @import "base";
 @import "partials";
+@import "layout";
 @import "locations";
 @import "login";
 @import "header";
 @import "nav";
 @import "search";
-@import "layout";
-@import "articles";
+@import "main";
 
 
 body {
   overflow-x: hidden;
-  // background: lighten($grey, 10%);
+  @include respond-to('small'){
+    &:after {
+      content: 'small';
+      display: none;
+    }
+  }
+  @include respond-to('medium'){
+    &:after {
+      content: 'medium';
+      display: none;
+    }
+  }
+  @include respond-to('large'){
+    &:after {
+      content: 'large';
+      display: none;
+    }
+  }
 }
+
 
 img {
   max-width: 100%;

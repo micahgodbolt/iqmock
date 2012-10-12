@@ -1,8 +1,22 @@
-$break-small: 550px;
-$break-large: 900px;
+
 
 
 aside, [role="main"], section, nav, article {
   width: 100%;
 }
 
+@include respond-to('medium') {
+  [role="main"] {
+    padding: 0 .5em;
+  }
+}
+@include respond-to('desktop') {
+  [role="main"] {
+    width: 70%;
+    float: left;
+  }
+  aside {
+    width: 30%;
+    float: left;
+  }
+}

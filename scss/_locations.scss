@@ -29,4 +29,8 @@
       content: '\e715';
     }
   }
+  @include respond-to('desktop') {
+    display: block;
+    max-height: 999em;
+  }
 }
