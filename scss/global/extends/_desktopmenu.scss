@@ -1,0 +1,51 @@
+%desktopmenu {
+  @include respond-to('large') {
+    float: left;
+    width: 50%;
+    ul{
+      overflow: hidden;
+      padding-left: 0px;
+      margin: 0;
+      a{
+        float: left;
+        width: 33%;
+        padding: 0.35em 0;
+        line-height: 2.4;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        border-right: 1px solid rgba(0,0,0,.2);
+      }
+       ul {
+        position: relative;
+        z-index: 1;
+        max-height: 0;
+        overflow: hidden;
+        background: darken($grey, 10%);
+        li{
+          position: relative;
+          margin: .5em;
+          padding: .5em;
+        }
+        a{
+          background: none;
+          font-size: 1.2em;
+          line-height: 1;
+          padding-left: 0;
+        }
+      }
+      span.opensecondary {
+      display: none;
+      }
+    }
+    }
+  @include respond-to('desktop'){
+    .search {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  }
+}

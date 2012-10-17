@@ -1,0 +1,26 @@
+@include dropdown(login);
+
+.login{
+  ul {
+    @extend %mobilemenu;
+  }
+ input[type="text"] {
+  width: 70%;
+  &:nth-of-type(even) {
+    margin-top: .3em;
+  }
+  @extend %forminput;
+ }
+ input[type="submit"] {
+  width: 25%;
+  margin-left: 2.5%;
+  @extend %formsubmit;
+
+ }
+ li li{
+    position: relative;
+    margin: .5em;
+    padding: .5em;
+    background: rgba(255,255,255,.2);
+  }
+}

@@ -1,0 +1,12 @@
+//
+// Base file bootstraps project and sets global variables
+//
+
+@import "compass";
+@import "utility/normalize";
+@import "variables";
+@import "mixins";
+@import "extends";
+
+@include font-face("fontello", font-files("fontello/fontello.ttf", "fontello/fontello.eot", "fontello/fontello.svg", "fontello/fontello.woff"));
+

@@ -1,0 +1,64 @@
+%dropdown-container {
+  position: absolute;
+  background: lighten($grey,10%);
+  max-height: 0;
+  overflow:hidden;
+}
+
+//layout for nav - not hidden at 'large' breakpoint
+%large-dropdown-container {
+    @include respond-to('large'){
+    position: static;
+    background: none;
+    max-height: inherit;
+    overflow:hidden;
+  }
+}
+
+%dropdown-active-state {
+  max-height: 999em;
+  padding: 1%;
+  position: absolute;
+  top: 3.6em;
+  @include box-shadow(-1px 3px 5px rgba(0,0,0,.3));
+  @include respond-to('medium'){
+    right: 0;
+    width: 30em;
+    top: 4.75em;
+  }
+}
+
+%dropdown-active-icon {
+  border: none;
+  color: $red;
+  background: lighten($grey, 10%);
+  @include border-radius(10px 10px 0 0);
+  position: relative;
+  top: 2px;
+  @include box-shadow(-2px -3px 2px rgba(0,0,0,.2));
+  z-index: 10;
+}
+
+@mixin dropdown ($dropdown-class){
+// style the base dropdown containers
+  .#{$dropdown-class} {
+    @extend %dropdown-container;
+    @if $dropdown-class == mainnav {
+      @extend %large-dropdown-container;
+    }
+ }
+
+
+  .active-#{$dropdown-class} {
+// styles when dropdown active
+    .#{$dropdown-class}{
+    @extend %dropdown-active-state;
+    }
+
+
+// Icon style when 'open'
+    .icon-#{$dropdown-class} {
+    @extend %dropdown-active-icon;
+    }
+  }
+} // End Dropdown Mixin

@@ -1,12 +1,14 @@
-@import "base";
-@import "partials";
-@import "layout";
-@import "locations";
-@import "login";
-@import "header";
-@import "nav";
-@import "search";
-@import "main";
+@import "global/base";
+@import "design/partials";
+@import "design/layout";
+@import "design/locations";
+@import "design/login";
+@import "design/header";
+@import "design/nav";
+@import "design/search";
+@import "design/main";
+
+
 
 
 body {

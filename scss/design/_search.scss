@@ -1,0 +1,27 @@
+
+
+.search {
+  border-bottom: solid white 1px;
+  background: $grey;
+  height: 3.6em;
+  padding: 0.5em 0;
+ input[type="text"] {
+    margin: 0;
+    width: 70%;
+    margin: 0 1%;
+    @extend %forminput;
+  }
+  input[type="submit"]{
+    @extend %formsubmit;
+    width: 25%;
+  }
+  @include respond-to('large') {
+    background: none;
+    height: auto;
+    border: none;
+    display: none;
+    input[type="text"] {
+    }
+  }
+}
+

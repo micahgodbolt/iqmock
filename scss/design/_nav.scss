@@ -1,0 +1,11 @@
+@include dropdown(mainnav);
+
+.active-mainnav .mainnav {
+  ul {
+    @extend %mobilemenu;
+  }
+}
+
+.mainnav{
+ @extend %desktopmenu;
+}
