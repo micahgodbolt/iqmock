@@ -1,11 +1,11 @@
 
 
-.search {
+.active-mainnav .search {
   border-bottom: solid white 1px;
   background: $grey;
   height: 3.6em;
   padding: 0.5em 0;
- input[type="text"] {
+  input[type="text"] {
     margin: 0;
     width: 70%;
     margin: 0 1%;
@@ -15,13 +15,11 @@
     @extend %formsubmit;
     width: 25%;
   }
+}
+
+.search {
   @include respond-to('large') {
-    background: none;
-    height: auto;
-    border: none;
     display: none;
-    input[type="text"] {
-    }
   }
 }
 

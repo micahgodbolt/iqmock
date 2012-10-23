@@ -1,9 +1,7 @@
 @include dropdown(location);
 
  .location {
-  ul {
-    @extend %mobilemenu;
-  }
+  @extend %mobilemenu;
   li li{
     position: relative;
     margin: .5em;

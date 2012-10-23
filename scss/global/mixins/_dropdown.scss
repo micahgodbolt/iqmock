@@ -11,7 +11,7 @@
     position: static;
     background: none;
     max-height: inherit;
-    overflow:hidden;
+    overflow: visible ;
   }
 }
 
@@ -19,12 +19,12 @@
   max-height: 999em;
   padding: 1%;
   position: absolute;
-  top: 3.6em;
-  @include box-shadow(-1px 3px 5px rgba(0,0,0,.3));
+  top: 3.7em;
+  @include box-shadow(-1px 3px 5px rgba(0,0,0,.5));
   @include respond-to('medium'){
     right: 0;
     width: 30em;
-    top: 4.75em;
+    top: 3.75em;
   }
 }
 

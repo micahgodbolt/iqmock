@@ -5,6 +5,9 @@
    @else if $media == medium {
     @media screen and (min-width: $break-small + 1) { @content; }
   }
+   @else if $media == upto-medium {
+    @media screen and (max-width: $break-medium) { @content; }
+  }
   @else if $media == large {
     @media screen and (min-width: $break-medium + 1) { @content; }
   }

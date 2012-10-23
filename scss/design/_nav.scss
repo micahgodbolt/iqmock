@@ -1,9 +1,13 @@
 @include dropdown(mainnav);
 
+
+.mainnav ul {
+  margin: 0;
+  padding: 0;
+}
+
 .active-mainnav .mainnav {
-  ul {
-    @extend %mobilemenu;
-  }
+  @extend %mobilemenu;
 }
 
 .mainnav{

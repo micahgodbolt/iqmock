@@ -3,10 +3,11 @@
 //
 
 @import "compass";
+@import "susy";
 @import "utility/normalize";
 @import "variables";
 @import "mixins";
 @import "extends";
 
-@include font-face("fontello", font-files("fontello/fontello.ttf", "fontello/fontello.eot", "fontello/fontello.svg", "fontello/fontello.woff"));
+@include font-face("fontello", font-files("fontello-iq/fontello.ttf", "fontello-iq/fontello.eot", "fontello-iq/fontello.svg", "fontello-iq/fontello.woff"));
 

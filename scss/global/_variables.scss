@@ -1,8 +1,14 @@
 //Variable file contains global colors, breakpoints and
 //other values to be used in extends, mixins and properties
 
+$total-columns  : 12;             // a 12-column grid
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : 0;  // grid-padding equal to gutters
+$column-width   : 4.2em;
+
+
 $grey: #b3b3b3;
 $red: #b5121b;
 $break-small: 550px;
-$break-medium: 790px;
+$break-medium: 720px;
 $break-large: 1000px;

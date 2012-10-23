@@ -1,61 +1,83 @@
 
 
 header {
+  .wrapper {
+    position: relative;
+    @extend .clearfix;
+  }
   @include background-image(linear-gradient(top, $red, darken($red,10%)));
   border-bottom: solid white 0.3em;
-  @extend .clearfix;
-  position: relative;
   // icons
   .icons {
     a{
       float: right;
       width: 18%;
-      padding: 0.35em 0;
+      padding: 0.35em 0 .30em;
       line-height: 1;
       text-decoration: none;
       color: white;
-      font-size: 2em;
+      font-size: 1.7em;
       text-align: center;
       span {
-       display: none;
+        display: block;
+        margin-top: .2em;
+        font-size: .4em;
       }
-      @include respond-to('medium'){
-      border-left: 1px solid rgba(0,0,0,.2);
-        span{
-          display: block;
-          margin-top: .2em;
-          font-size: .5em;
-        }
-       }
-       @include respond-to('large') {
-        width: 2.7em;
-        font-size: 1.4em;
-        border: none;
-       }
-
       &:before {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
         content: attr(data-icon);
         font-family: fontello;
         speak: none;
-      } //end icon styles
-    }
-    .icon-mainnav {
-    @include respond-to('large') {
-        display: none;
       }
     }
+    .icon-search  {
+    display: none;
+    }
+
+    @include respond-to('medium'){
+      a {
+        padding: 0.35em 0;
+        border-left: 1px solid rgba(0,0,0,.2);
+        span{
+          margin-top: .2em;
+          font-size: .4em;
+        }
+      }
+    }
+
     @include respond-to('large') {
-      position: absolute;
-      right: 0;
-      bottom: 0;
+      & { //.icons
+        position: absolute;
+        right: 0;
+        bottom: .1em;
+      }
+      a {
+        width: 3em;
+        font-size: 1.4em;
+        border: none;
+        span {
+          margin-top: .3em;
+          font-size: .5em;
+        }
+      }
+      .icon-mainnav {
+        display: none;
+      }
+      .icon-search {
+        display: block;
+      }
+     }
+    //end icon styles
+
+    @include respond-to('large') {
+
     }
   }
 
   .iqlogo {
     max-width: 32%;
     float: left;
-    margin: .3em 0 0 .5em;
+    margin: .4em 0 0 .5em;
     height: 3.5em;
     width: 4em;
     background-repeat: no-repeat;
@@ -67,9 +89,6 @@ header {
     }
     @include respond-to('medium'){
       max-width: 32%;
-      margin: .3em .3em 0 .5em;
-      height: 4.2em;
-      width: 5.2em;
      }
   }
 }

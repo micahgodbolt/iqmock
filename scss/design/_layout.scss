@@ -1,18 +1,18 @@
 
 
 
-aside, [role="main"], section, nav, article {
-  width: 100%;
+[role="main"], header .wrapper, footer {
+  @include container();
 }
 
-@include respond-to('medium') {
-  [role="main"] {
-//    padding: 0 .5em;
+
+article {
+  @include respond-to('medium') {
+    @include span-columns(6,12);
+    &:nth-of-type(even) {
+      @include span-columns(6 omega,12);
+    }
   }
 }
-@include respond-to('desktop') {
-  [role="main"] {
-    width: 1000px;
-    margin: 0px auto;
-  }
-}
+
+
