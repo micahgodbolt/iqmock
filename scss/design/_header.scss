@@ -1,12 +1,15 @@
 
 
 header {
+  li {
+    list-style: none;
+  }
   .wrapper {
     position: relative;
     @extend .clearfix;
   }
   @include background-image(linear-gradient(top, $red, darken($red,10%)));
-  border-bottom: solid white 0.3em;
+  border-bottom: solid $grey 0.3em;
   // icons
   .icons {
     a{
@@ -14,7 +17,6 @@ header {
       width: 18%;
       padding: 0.35em 0 .30em;
       line-height: 1;
-      text-decoration: none;
       color: white;
       font-size: 1.7em;
       text-align: center;

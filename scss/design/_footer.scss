@@ -1,0 +1,104 @@
+footer {
+  border-top: 3px solid darken($red, 10%);
+  clear: both;
+  background: $red;
+  a {
+    color: white;
+  }
+  .container {
+    @include container;
+  }
+}
+
+.certifications {
+  @include container;
+  @include respond-to('upto-medium') {
+    li {
+      margin-bottom: .5em;
+      text-align: center;
+      height: image-height('sprites/vbv.png');
+      @include span-columns(1,2);
+      &.ncua, &.atm {
+        @include span-columns(1 omega,2);
+      }
+    }
+  }
+  @include respond-to('large') {
+    li {
+      text-align: center;
+      height: image-height('sprites/vbv.png');
+      @include span-columns(1,4);
+      &.atm {
+        @include span-columns(1 omega,4);
+      }
+    }
+  }
+  .visa{
+    padding-right: image-width('sprites/vbv.png');
+    @include sprites-sprite(vbv);
+    background-position-x: right;
+  }
+  .ncua{
+    padding-right: image-width('sprites/ncua.png');
+    @include sprites-sprite(ncua);
+    background-position-x: right;
+  }
+  .ehl{
+    padding-right: image-width('sprites/ehl.png');
+    @include sprites-sprite(ehl);
+    background-position-x: right;
+  }
+  .atm{
+    padding-right: image-width('sprites/coop.png');
+    @include sprites-sprite(coop);
+    background-position-x: right;
+  }
+  a {
+    font-size: 12px;
+    line-height: 10px;
+    display: block;
+  }
+}
+
+
+.footernav {
+  padding-top: .8em;
+  padding-bottom: 1em;
+  > ul {
+    margin-top: 0;
+    > li {
+      > a {
+          font-size: 1.2em;
+          margin-bottom: .5em;
+          color: darken($grey, 20%);
+          display: block;
+      }
+    }
+    ul {
+      margin-top: .3em;
+      padding: 0;
+      li {
+        @include respond-to(medium) {
+          display: inline-block;
+          &:after {
+            font-size: .7em;
+            content: "•";
+            color: white;
+            margin-left: .3em;
+          }
+          &:last-of-type:after {
+            content: "";
+          }
+          line-height: 1.2;
+        }
+        line-height: 1.4;
+      }
+      a {
+        font-size: .8em;
+      }
+    }
+  }
+  .opensecondary {
+    display: none;
+  }
+}

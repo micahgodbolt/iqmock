@@ -2,7 +2,7 @@
 
 .active-mainnav .search {
   border-bottom: solid white 1px;
-  background: $grey;
+  background: darken($grey, 10%);
   height: 3.6em;
   padding: 0.5em 0;
   input[type="text"] {

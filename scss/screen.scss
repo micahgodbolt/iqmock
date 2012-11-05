@@ -1,19 +1,15 @@
 @import "global/base";
-@import "design/partials";
-@import "design/layout";
-@import "design/locations";
-@import "design/login";
-@import "design/header";
-@import "design/nav";
-@import "design/search";
-@import "design/main";
-@import "design/blocks";
+@import "styleguide/styleguide";
+@import "design/design";
 
 
 
 
 
 body {
+  @include background(linear-gradient(darken($grey,10%), $grey));
+
+
   overflow-x: hidden;
   @include respond-to('small'){
     &:after {

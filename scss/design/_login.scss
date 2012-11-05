@@ -1,7 +1,9 @@
 @include dropdown(login);
 
 .login{
-  @extend %mobilemenu;
+  @extend %mobiledropdown;
+  @extend %desktopdropdown;
+
   input[type="text"] {
     width: 70%;
     &:nth-of-type(even) {

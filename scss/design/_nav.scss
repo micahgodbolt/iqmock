@@ -6,10 +6,8 @@
   padding: 0;
 }
 
-.active-mainnav .mainnav {
-  @extend %mobilemenu;
+.mainnav {
+  @extend %mobiledropdown;
+  @extend %desktopmenu;
 }
 
-.mainnav{
- @extend %desktopmenu;
-}

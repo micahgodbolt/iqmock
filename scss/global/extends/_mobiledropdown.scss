@@ -1,0 +1,60 @@
+%mobiledropdown {
+  @include respond-to('upto-medium'){
+    ul{
+      overflow: hidden;
+      padding-left: 0px;
+      margin: 0;
+      a{
+        @include background-image(linear-gradient(lighten($grey, 10%), $grey, darken($grey, 10%)));
+        display: block;
+        line-height: 2.2em;
+        font-size: 1.4em;
+        color: #333;
+        padding-left: 1em;
+        position: relative;
+        z-index: 10;
+      }
+      ul {
+        position: relative;
+        z-index: 1;
+        max-height: 0;
+        overflow: hidden;
+        background: darken($grey, 10%);
+        li{
+          position: relative;
+          margin: .5em;
+          padding: .5em;
+          background: rgba(255,255,255,.2);
+        }
+        .promo {
+        }
+        a{
+          background: none;
+          font-size: 1.2em;
+          line-height: 1;
+          padding-left: 0;
+        }
+      }
+      .open { // when secondary navigation is open
+        a {@include box-shadow(0px 4px 4px rgba(0,0,0,.2));}
+        li a {@include box-shadow(0px 0px 0px rgba(0,0,0,.1));}
+        & + li a {@include box-shadow(0px -4px 4px rgba(0,0,0,.1));}
+        ul {
+          padding: .3em 0;
+          max-height:999em;
+        }
+      }
+
+      span.opensecondary { // trigger to open secondary
+      font-family: fontello;
+      color: darken($grey, 30%);
+      width: 2.5em;
+      text-align: center;
+      float: right;
+      border-left: 1px ridge darken($grey, 30%);
+      margin: .1em 0;
+      line-height: 2em;
+      }
+    }
+  }
+}

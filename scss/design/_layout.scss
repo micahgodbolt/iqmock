@@ -1,17 +1,17 @@
 
 
 
-[role="main"], header .wrapper, footer {
+[role="main"], header .wrapper {
   @include container();
 }
 
 
-article {
-  @include respond-to('medium') {
+@include respond-to('medium') {
+  .main .left {
     @include span-columns(6,12);
-    &:nth-of-type(even) {
-      @include span-columns(6 omega,12);
-    }
+  }
+  .main .right {
+    @include span-columns(6 omega,12);
   }
 }
 

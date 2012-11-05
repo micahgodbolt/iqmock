@@ -58,9 +58,7 @@ body, button, input, select, textarea {
  ***************************************************************************** */
 
 a {
-  color: #0000ee;
   &:visited {
-    color: #551a8b;
   }
   &:focus {
     // Addresses outline displayed oddly in Chrome

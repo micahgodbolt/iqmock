@@ -1,5 +1,15 @@
+[role="main"] {
+}
+
 article {
+  height: 300px;
   margin-bottom: 1.5em;
+  overflow: hidden;
+  // border: 6px solid lighten($grey,10%);
+
+  @include respond-to(desktop) {
+    @include box-shadow(2px 2px 4px #666);
+  }
 }
 
 
@@ -25,7 +35,6 @@ article {
   }
 }
 
-
 .box2 {
   background: url('http://www.marketingsavant.com/wp-content/uploads/banking_001.jpg') no-repeat;
   height: 15em;
@@ -40,24 +49,84 @@ article {
     line-height: 1.20;
     font-size: 1.1em;
     margin: 0;
-    padding: .5em 9em .5em .5em;
+    padding: .5em 25% .5em .5em;
     background: rgba(0,0,0,.8);
     &:before {
       font-size: 2.5em;
-      right: 2.4em;
-      top:  .15em;
       content: "🔗";
       font-family: fontello;
-      position: absolute;
-
-      }
+      float:right;
+      margin-left: .4em;
+    }
     span {
       display: block;
       color: $red;
       font-weight: bold;
-      }
     }
   }
+}
+
+.rates {
+  background: white;
+  padding: .5em;
+  h3{
+    text-align: center;
+    color: $red;
+    margin-top: 0;
+    margin-bottom: .2em;
+    font-weight: 100;
+    line-height: 1;
+    font-size: 1.8em;
+  }
+  h4 {
+    margin-top:0;
+    margin-bottom: .3em;
+    text-align: center;
+    color: darken($grey, 15%);
+  }
+  ul {
+    color: $black;
+    font-size: .9em;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  li {
+    clear: both;
+    line-height: 1.4;
+  }
+  span {
+    float: right;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .box3 {
   position: relative;
@@ -140,7 +209,6 @@ article {
   }
   a {
     color: #555;
-    text-decoration: none;
   }
 
 }
