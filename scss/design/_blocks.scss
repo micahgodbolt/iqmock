@@ -2,14 +2,21 @@
 }
 
 article {
-  height: 300px;
-  margin-bottom: 1.5em;
+  margin-bottom: .7em;
   overflow: hidden;
   // border: 6px solid lighten($grey,10%);
-
-  @include respond-to(desktop) {
-    @include box-shadow(2px 2px 4px #666);
+  @include respond-to(upto-large) {
+    @include span-columns(6,12);
+    @include nth-omega('2n+1');
   }
+  @include respond-to(small) {
+    @include span-columns(12,12);
+  }
+  @include respond-to(desktop) {
+    @include span-columns(4,12);
+    @include nth-omega('3n+1');
+  }
+
 }
 
 
@@ -31,7 +38,64 @@ article {
   p {
     font-size: .9em;
     color: #ddd;
-    padding-bottom: 1.5em;
+  }
+  &.small {
+    padding: 0;
+    background: none;
+    > div {
+      height: 49%;
+      padding: .5em;
+      background: #1f1f1f;
+      position: relative;
+      clear: both;
+      @include respond-to(desktop) {
+        height: 48%;
+      }
+      &:first-child {
+      margin-bottom: .7em;
+        @include respond-to(medium) {
+        margin-bottom: 2%;
+        }
+      }
+    }
+    img {
+      position: absolute;
+      left: 3%;
+      top: 6%;
+      width: 20%;
+      height: auto;
+      z-index: 100;
+      @include respond-to(medium) {
+        display: none;
+      }
+      @include respond-to(large) {
+        display: block;
+      }
+    }
+    .inside {
+      margin-left: 24%;
+      @include respond-to(medium) {
+        margin-left: 0;
+      }
+      @include respond-to(large) {
+        margin-left: 24%;
+      }
+    }
+    h3 {
+      font-size: 1.3em;
+      margin-bottom: .3em;
+    }
+    p {
+      margin-top: .3em;
+    }
+  }
+  &.large {
+    @include respond-to(medium) {
+      @include span-columns(12,12);
+    }
+    @include respond-to(desktop) {
+      @include span-columns(8 omega,12);
+    }
   }
 }
 

@@ -1,0 +1,38 @@
+.hero {
+
+  .slides li{
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    @include respond-to('medium') {
+      padding: 0;
+      height: 300px;
+    }
+    @include respond-to('large') {
+      padding: 0;
+      height: 400px;
+    }
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+
+  .slides li.first{
+  background-image: url(../img/visa_platinum_banner_720.jpg);
+    @include respond-to('large') {
+      background-image: url(../img/visa_platinum_banner.jpg);
+    }
+  }
+  .slides li.second{
+  background-image: url(../img/no_balance_banner.jpg);
+    @include respond-to('large') {
+      background-image: url(../img/no_balance_banner.jpg);
+    }
+  }
+}
