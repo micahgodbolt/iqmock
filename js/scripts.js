@@ -101,18 +101,20 @@ var currentTallest = 0,
    for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
      rowDivs[currentDiv].height(currentTallest);
    }
- console.log(currentTallest);
 
  });
 }
 
 $(document).ready(function() {
-  equalheight('.main article');
+equalheight('.main article.equal');
 });
 
+$(window).load(function() {
+equalheight('.main article.equal');
+});
 
 $(window).resize(function(){
-  equalheight('.main article');
+  equalheight('.main article.equal');
 });
 
 //Hero Slider
@@ -121,5 +123,6 @@ $(window).resize(function(){
     $('.flexslider').flexslider({
       animation: "slide",
       pauseOnHover: true,
-});
+      useCSS: false,
+  });
   });

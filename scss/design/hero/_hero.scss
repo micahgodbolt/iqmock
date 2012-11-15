@@ -21,6 +21,9 @@
       bottom: 0;
       z-index: 1;
     }
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .slides li.first{
