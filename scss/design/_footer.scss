@@ -81,10 +81,11 @@ footer {
         @include respond-to(medium) {
           display: inline-block;
           &:after {
-            font-size: .7em;
-            content: "•";
+            font-size: .8em;
+            content: "\2022";
             color: white;
             margin-left: .3em;
+            
           }
           &:last-of-type:after {
             content: "";
