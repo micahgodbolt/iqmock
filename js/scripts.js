@@ -64,8 +64,15 @@ jQuery(document).ready(function($) {
         else {
           clearBodyClasses();
           $('body').toggleClass("active-login");
+          document.getElementById("username").focus();
         }
       });
+
+    $(document).keyup(function(e) {
+      if (e.keyCode == 27) {
+        clearBodyClasses();
+            }
+        });
 
 
 
@@ -106,15 +113,15 @@ var currentTallest = 0,
 }
 
 $(document).ready(function() {
-equalheight('.main article.equal');
+equalheight('.main .equal');
 });
 
 $(window).load(function() {
-equalheight('.main article.equal');
+equalheight('.main .equal');
 });
 
 $(window).resize(function(){
-  equalheight('.main article.equal');
+  equalheight('.main .equal');
 });
 
 //Hero Slider

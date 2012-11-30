@@ -301,8 +301,16 @@ table {
     top: 3.75em;
   }
 }
+@media screen and (min-width: 46em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/global\/mixins\/_dropdown\.scss}line{font-family:\0000318}}
+  .active-location .location, .active-login .login, .active-mainnav .mainnav {
+    right: 0;
+    width: 30em;
+    top: 1.7em;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/global\/mixins\/_dropdown\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/global\/mixins\/_dropdown\.scss}line{font-family:\0000338}}
 .active-location .icon-location, .active-login .icon-login, .active-mainnav .icon-mainnav {
   border: none;
   color: #b5121b;
@@ -625,6 +633,13 @@ table {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/styleguide\/_styleguide\.scss}line{font-family:\000031}}
+body {
+  line-height: 1.3;
+  color: #1f1f1f;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/styleguide\/_styleguide\.scss}line{font-family:\000038}}
 a {
   text-decoration: none;
 }
@@ -823,57 +838,91 @@ header .icons a span {
   margin-top: .2em;
   font-size: .4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000327}}
+header .icons a span em {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000331}}
 header .icons a:before {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   content: attr(data-icon);
   font-family: fontello;
   speak: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000338}}
 header .icons .icon-search {
   display: none;
 }
 @media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000344}}
   header .icons a {
     padding: 0.35em 0;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000347}}
   header .icons a span {
     margin-top: .2em;
     font-size: .4em;
   }
 }
 @media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000355}}
   header .icons {
     position: absolute;
-    right: 0;
-    bottom: .1em;
+    right: .5em;
+    top: 5%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000361}}
   header .icons a {
     width: 3em;
     font-size: 1.4em;
     border: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000360}}
-  header .icons a span {
-    margin-top: .3em;
-    font-size: .5em;
-  }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000365}}
-  header .icons .icon-mainnav {
+  header .icons a:before {
     display: none;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000368}}
+  header .icons a span {
+    margin-top: 0;
+    font-size: .5em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000373}}
+  header .icons .icon-mainnav {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000376}}
   header .icons .icon-search {
     display: block;
   }
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000379}}
+  header .icons .icon-login {
+    top: auto;
+    font-size: 1.5em;
+    color: #c1bab2;
+    position: absolute;
+    bottom: -84%;
+    width: 100%;
+    background: white;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    border-radius: 0.2em;
+    border: 1px solid #c1bab2;
+    padding: .23em .6em;
+    cursor: text;
+    -webkit-box-shadow: inset 0px 1px 9px #aaaaaa;
+    -moz-box-shadow: inset 0px 1px 9px #aaaaaa;
+    box-shadow: inset 0px 1px 9px #aaaaaa;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000393}}
+  header .icons .icon-login em {
+    display: inline;
+    text-transform: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\00003106}}
 header .iqlogo {
   max-width: 32%;
   float: left;
@@ -884,12 +933,12 @@ header .iqlogo {
   background-size: contain;
   background-image: url(../img/iqlogo.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\00003116}}
 .svg header .iqlogo {
   background-image: url(../img/iqlogo.svg);
 }
 @media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_header\.scss}line{font-family:\00003106}}
   header .iqlogo {
     max-width: 32%;
   }
@@ -926,7 +975,24 @@ header .iqlogo {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\000031}}
+.hero {
+  *zoom: 1;
+  max-width: 67.7em;
+  _width: 67.7em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.13\.alpha\.0\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.hero:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\000034}}
 .hero .slides li {
   height: 200px;
   background-size: cover;
@@ -937,20 +1003,20 @@ header .iqlogo {
   overflow: hidden;
 }
 @media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\000034}}
   .hero .slides li {
     padding: 0;
     height: 300px;
   }
 }
 @media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\000034}}
   .hero .slides li {
     padding: 0;
     height: 400px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000317}}
 .hero .slides li a {
   position: absolute;
   top: 0;
@@ -959,22 +1025,22 @@ header .iqlogo {
   bottom: 0;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000330}}
 .hero .slides li.first {
   background-image: url(../img/visa_platinum_banner_720.jpg);
 }
 @media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000330}}
   .hero .slides li.first {
     background-image: url(../img/visa_platinum_banner.jpg);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000336}}
 .hero .slides li.second {
   background-image: url(../img/no_balance_banner.jpg);
 }
 @media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_hero\.scss}line{font-family:\0000336}}
   .hero .slides li.second {
     background-image: url(../img/no_balance_banner.jpg);
   }
@@ -1001,31 +1067,25 @@ header .iqlogo {
 /* FlexSlider Necessary Styles
 *********************************/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000313}}
-.flexslider {
-  margin: 0;
-  padding: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000314}}
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000314}}
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000315}}
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000318}}
 .slides:after {
   content: ".";
   display: block;
@@ -1035,12 +1095,12 @@ header .iqlogo {
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000319}}
 html[xmlns] .slides {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000320}}
 * html .slides {
   height: 1%;
 }
@@ -1048,21 +1108,20 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000325}}
 .no-js .slides > li:first-child {
   display: block;
 }
 
 /* FlexSlider Default Theme
 *********************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000330}}
 .flexslider {
-  margin: 0 0 10px;
   position: relative;
   zoom: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000331}}
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
@@ -1070,28 +1129,28 @@ html[xmlns] .slides {
   transition: all 1s ease;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000332}}
 .loading .flex-viewport {
   max-height: 300px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000333}}
 .flexslider .slides {
   zoom: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000335}}
 .carousel li {
   margin-right: 5px;
 }
 
 /* Direction Nav */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000339}}
 .flex-direction-nav {
   *height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000340}}
 .flex-direction-nav a {
   width: 30px;
   height: 30px;
@@ -1107,35 +1166,35 @@ html[xmlns] .slides {
   -webkit-transition: all .3s ease;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000341}}
 .flex-direction-nav .flex-next {
   background-position: 100% 0;
   right: -36px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000342}}
 .flex-direction-nav .flex-prev {
   left: -36px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000343}}
 .flexslider:hover .flex-next {
   opacity: 0.8;
   right: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000344}}
 .flexslider:hover .flex-prev {
   opacity: 0.8;
   left: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000345}}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000346}}
 .flex-direction-nav .flex-disabled {
   opacity: .3!important;
   filter: alpha(opacity=30);
@@ -1143,7 +1202,7 @@ html[xmlns] .slides {
 }
 
 /* Control Nav */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000349}}
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -1152,7 +1211,7 @@ html[xmlns] .slides {
   z-index: 500;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000350}}
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
@@ -1160,7 +1219,7 @@ html[xmlns] .slides {
   *display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000351}}
 .flex-control-paging li a {
   width: 11px;
   height: 11px;
@@ -1176,34 +1235,34 @@ html[xmlns] .slides {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000352}}
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000353}}
 .flex-control-paging li a.flex-active {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000355}}
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000356}}
 .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000357}}
 .flex-control-thumbs img {
   width: 100%;
   display: block;
@@ -1211,167 +1270,101 @@ html[xmlns] .slides {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000358}}
 .flex-control-thumbs img:hover {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000359}}
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
 }
 
 @media screen and (max-width: 860px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000362}}
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/hero\/_flexslider\.scss}line{font-family:\0000363}}
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000034}}
-article {
-  margin-bottom: .7em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_main\.scss}line{font-family:\000031}}
+.main {
+  padding: 0 .2em;
 }
-@media screen and (max-width: 71em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000034}}
-  article {
-    width: 49.48301%;
-    float: left;
-    margin-right: 1.03397%;
-    display: inline;
+@media screen and (min-width: 46em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_main\.scss}line{font-family:\000031}}
+  .main {
+    padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/susy-1\.0\.3\/sass\/susy\/_grid\.scss}line{font-family:\00003174}}
-  article:nth-child(2n+1) {
-    float: right;
-    margin-right: 0;
-  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000031}}
+.main article {
+  position: relative;
+  margin-bottom: .7em;
 }
 @media screen and (max-width: 35em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000034}}
-  article {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000031}}
+  .main article {
     width: 100%;
     float: left;
-    margin-right: 1.03397%;
+    margin-right: 2.43902%;
     display: inline;
   }
 }
-@media screen and (min-width: 71em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000034}}
-  article {
-    width: 32.64402%;
+@media screen and (min-width: 36em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000031}}
+  .main article {
+    width: 48.78049%;
     float: left;
-    margin-right: 1.03397%;
+    margin-right: 2.43902%;
     display: inline;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/susy-1\.0\.3\/sass\/susy\/_grid\.scss}line{font-family:\00003174}}
-  article:nth-child(3n+1) {
+  .main article:nth-child(2n) {
     float: right;
     margin-right: 0;
   }
 }
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000318}}
-  article.large {
-    width: 100%;
+@media screen and (min-width: 46em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\000031}}
+  .main article {
+    width: 23.17073%;
     float: left;
-    margin-right: 1.03397%;
+    margin-right: 2.43902%;
     display: inline;
   }
-}
-@media screen and (min-width: 71em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000318}}
-  article.large {
-    width: 66.32201%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/susy-1\.0\.3\/sass\/susy\/_grid\.scss}line{font-family:\00003234}}
+  .main article:nth-child(2n) {
+    float: left;
+    margin-right: 2.43902%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/susy-1\.0\.3\/sass\/susy\/_grid\.scss}line{font-family:\00003174}}
+  .main article:nth-child(4n) {
     float: right;
     margin-right: 0;
-    #margin-left: -0.7em;
-    display: inline;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000326}}
-article.equal.small {
-  padding: 0;
-  background: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000329}}
-article.equal.small > div {
-  height: 49%;
-  padding: .5em;
-  position: relative;
-  clear: both;
-}
-@media screen and (min-width: 71em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000329}}
-  article.equal.small > div {
-    height: 49%;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000337}}
-article.equal.small > div:first-child {
-  margin-bottom: .7em;
-}
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000337}}
-  article.equal.small > div:first-child {
-    margin-bottom: 2%;
-  }
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000347}}
-body {
-  background: white !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000354}}
-.loanrates ul {
-  padding: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000357}}
-.loanrates li {
-  list-style-type: none;
-  text-align: left;
-  clear: both;
-  background: rgba(255, 255, 255, 0.1);
-  padding: .2em .7em;
-  margin-bottom: .3em;
-  font-size: .8em;
-  font-weight: bold;
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000367}}
-.loanrates li span {
-  float: right;
-  font-style: italic;
-  font-weight: 100;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000372}}
-.imageleft .loanrates li {
-  color: #5d544a;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000382}}
-.iconbox {
-  padding: .5em .5em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000318}}
+.main article .button1 {
   text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000383}}
-.iconbox .button {
+  margin: 1em 0 .5em;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e31722), color-stop(100%, #870d14));
   background-image: -webkit-linear-gradient(top, #e31722, #870d14);
   background-image: -moz-linear-gradient(top, #e31722, #870d14);
   background-image: -o-linear-gradient(top, #e31722, #870d14);
   background-image: -ms-linear-gradient(top, #e31722, #870d14);
   background-image: linear-gradient(top, #e31722, #870d14);
-  display: inline-block;
+  display: block;
   color: white;
+  text-transform: uppercase;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1380,15 +1373,14 @@ body {
   -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4);
   -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4);
   box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4);
-  padding: .4em .6em .3em;
+  padding: .4em 0;
   border: 1px solid #870d14;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1;
-  margin-bottom: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000396}}
-.iconbox .button:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000333}}
+.main article .button1:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cc141e), color-stop(100%, #6f0b11));
   background-image: -webkit-linear-gradient(top, #cc141e, #6f0b11);
   background-image: -moz-linear-gradient(top, #cc141e, #6f0b11);
@@ -1396,376 +1388,84 @@ body {
   background-image: -ms-linear-gradient(top, #cc141e, #6f0b11);
   background-image: linear-gradient(top, #cc141e, #6f0b11);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
-  position: relative;
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003104}}
-.iconbox .button:after {
-  content: 'ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ';
-  font-family: fontello;
-  margin-left: .6em;
+
+@media screen and (min-width: 36em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000349}}
+  .homeblock {
+    margin: .3em 0 0;
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003110}}
-.iconbox.loanrates li {
-  color: #1f1f1f;
+@media screen and (min-width: 46em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000349}}
+  .homeblock {
+    margin-top: 2em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000356}}
+.homeblock h2 {
+  font-weight: 600;
+  color: #b5121b;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000362}}
+.homeblock p {
+  margin-top: .3em;
+  font-size: .9em;
+  line-height: 1.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000370}}
+.insideblock {
   background: #eeedeb;
+  margin-top: .5em;
 }
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000382}}
-  .iconbox {
-    overflow: hidden;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003119}}
-.iconbox img {
-  height: 7em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000373}}
+.insideblock p {
   margin-top: .3em;
+  font-size: .9em;
+  line-height: 1.3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003123}}
-.iconbox h3 {
-  color: #b5121b;
-  margin-top: 0em;
-  margin-bottom: .3em;
-  font-weight: 100;
-  font-size: 1.8em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003131}}
-.iconbox h4 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000378}}
+.insideblock h2 {
+  background: #c1bab2;
+  color: #1f1f1f;
+  margin-bottom: 0em;
+  font-size: 1.2em;
   margin-top: 0;
-  color: #1f1f1f;
+  text-align: center;
+  padding: .1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003135}}
-.iconbox p {
-  font-size: .9em;
-  color: #1f1f1f;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003139}}
-.iconbox.small > div {
-  position: relative;
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003143}}
-.iconbox.small > div img {
-  position: absolute;
-  left: 3%;
-  top: 6%;
-  width: 20%;
-  height: auto;
-  z-index: 100;
-}
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003143}}
-  .iconbox.small > div img {
-    display: none;
-  }
-}
-@media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003143}}
-  .iconbox.small > div img {
-    display: block;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003157}}
-.iconbox.small > div .inside {
-  margin-left: 26%;
-}
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003157}}
-  .iconbox.small > div .inside {
-    margin-left: 0;
-  }
-}
-@media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003157}}
-  .iconbox.small > div .inside {
-    margin-left: 26%;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003166}}
-.iconbox.small > div h3 {
-  font-size: 1.3em;
-  margin-bottom: .3em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003170}}
-.iconbox.small > div p {
-  margin-top: .3em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003178}}
-.imageleft {
-  position: relative;
-  padding: 0 0 1em 0;
-  color: #5d544a;
-  background: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003179}}
-.imageleft .button {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cc141e), color-stop(100%, #870d14));
-  background-image: -webkit-linear-gradient(top, #cc141e, #870d14);
-  background-image: -moz-linear-gradient(top, #cc141e, #870d14);
-  background-image: -o-linear-gradient(top, #cc141e, #870d14);
-  background-image: -ms-linear-gradient(top, #cc141e, #870d14);
-  background-image: linear-gradient(top, #cc141e, #870d14);
-  display: inline-block;
-  color: white;
-  -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 2px 5px 1px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 2px 5px 1px rgba(0, 0, 0, 0.7);
-  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 2px 5px 1px rgba(0, 0, 0, 0.7);
-  padding: .6em .9em .5em;
-  border: 1px solid #870d14;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
-  font-size: 1.2em;
-  line-height: 1;
-  font-weight: 100;
-  margin-bottom: 1em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003193}}
-.imageleft .button:hover {
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-  position: relative;
-  top: 1px;
-  -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), inset 0 1px 1px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), inset 0 1px 1px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), inset 0 1px 1px 0px rgba(0, 0, 0, 0.5);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003201}}
-.imageleft .button:after {
-  content: '\2611';
-  font-family: fontello;
-  margin-left: .6em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003211}}
-.imageleft .rightimage {
-  max-height: 10em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003214}}
-.imageleft h3 {
-  font-weight: 100;
-  color: white;
-  background: #b5121b;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000387}}
+.insideblock ul {
   margin: 0;
-  padding: .3em;
-  padding-left: 35%;
-}
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003214}}
-  .imageleft h3 {
-    padding-left: 5%;
-  }
-}
-@media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003214}}
-  .imageleft h3 {
-    padding-left: 35%;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003228}}
-.imageleft h4 {
-  margin-top: .5em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003231}}
-.imageleft .rightimage {
-  float: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003234}}
-.imageleft .sideimage {
-  background: url("http://www.marketingsavant.com/wp-content/uploads/banking_001.jpg") no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 70%;
-}
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003234}}
-  .imageleft .sideimage {
-    display: none;
-  }
-}
-@media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003234}}
-  .imageleft .sideimage {
-    display: block;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003250}}
-.imageleft .imageleft-inside {
-  margin-left: 35%;
-  margin-right: 5%;
-}
-@media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003250}}
-  .imageleft .imageleft-inside {
-    margin-left: 5%;
-  }
-}
-@media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003250}}
-  .imageleft .imageleft-inside {
-    margin-left: 35%;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003259}}
-.imageleft .imageleft-inside p {
-  margin-top: .5em;
-  font-size: .8em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003264}}
-.imageleft.first .sideimage {
-  background-image: url("http://www.cordellpd.com/sites/default/files/online_banking.jpg");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003267}}
-.imageleft .second .sideimage {
-  background-image: url("http://static.ddmcdn.com/gif/isonlinebankingsafe1.jpg");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003270}}
-.imageleft .third .sideimage {
-  background-image: url("https://www.watrust.com/images/PersBank/InternetBanking.jpg");
-  background-size: 270%;
-  background-position: 80% 50%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003275}}
-.imageleft.fourth .sideimage {
-  background-image: url("http://www.schullyroberts.com/images/2practiceareas/banking.jpg");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003279}}
-.imageleft.fifth .sideimage {
-  background-image: url("http://3.s3.envato.com/files/1450637/preview_image.jpg");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003283}}
-.imageleft.small.equal {
-  overflow: hidden;
-  background: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003286}}
-.imageleft.small.equal > div {
-  height: 49%;
-  padding: 0 0 .5em 0;
-  background: white;
-  position: relative;
-  margin-bottom: 1%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003292}}
-.imageleft.small.equal > div:last-child {
-  margin-bottom: 0;
-}
-@media screen and (min-width: 71em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003286}}
-  .imageleft.small.equal > div {
-    height: 49%;
-  }
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003307}}
-.overlay {
-  background: url("http://www.marketingsavant.com/wp-content/uploads/banking_001.jpg") no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  position: relative;
-  padding: 15em .5em .5em 0;
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003308}}
-.overlay .button {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeedeb), color-stop(100%, #948779));
-  background-image: -webkit-linear-gradient(top, #eeedeb, #948779);
-  background-image: -moz-linear-gradient(top, #eeedeb, #948779);
-  background-image: -o-linear-gradient(top, #eeedeb, #948779);
-  background-image: -ms-linear-gradient(top, #eeedeb, #948779);
-  background-image: linear-gradient(top, #eeedeb, #948779);
-  display: inline-block;
-  color: #403a34;
-  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 1px 2px 4px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 1px 2px 4px rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 1px 2px 4px rgba(0, 0, 0, 0.7);
-  padding: .4em .6em .3em;
-  border: 1px solid #aaa196;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-  font-size: 1.2em;
-  line-height: 1;
-  font-weight: bold;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003320}}
-.overlay .button:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8d3ce), color-stop(100%, #aaa196));
-  background-image: -webkit-linear-gradient(top, #d8d3ce, #aaa196);
-  background-image: -moz-linear-gradient(top, #d8d3ce, #aaa196);
-  background-image: -o-linear-gradient(top, #d8d3ce, #aaa196);
-  background-image: -ms-linear-gradient(top, #d8d3ce, #aaa196);
-  background-image: linear-gradient(top, #d8d3ce, #aaa196);
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003325}}
-.overlay .button:after {
-  content: 'ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ';
-  font-family: fontello;
-  margin-left: .6em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003337}}
-.overlay.first {
-  background-image: url("http://www.cordellpd.com/sites/default/files/online_banking.jpg");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003340}}
-.overlay .second {
-  background-image: url("http://static.ddmcdn.com/gif/isonlinebankingsafe1.jpg");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003343}}
-.overlay .third {
-  background-image: url("https://www.watrust.com/images/PersBank/InternetBanking.jpg");
-  background-size: 120%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003347}}
-.overlay.fourth {
-  background-image: url("http://www.schullyroberts.com/images/2practiceareas/banking.jpg");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003350}}
-.overlay .overlay_background {
-  position: absolute;
-  bottom: .5em;
-  right: .5em;
-  left: 0;
-  padding: .5em .5em .5em .5em;
-  background: rgba(0, 0, 0, 0.8);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003359}}
-.overlay .rightimage {
-  float: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003363}}
-.overlay p {
-  font-size: .9em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003366}}
-.overlay h3 {
-  color: #eee;
-  line-height: 1.20;
-  font-size: 1.1em;
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003371}}
-.overlay h3 span {
-  display: block;
-  color: #b5121b;
-  font-weight: bold;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003378}}
-.overlay.small {
   padding: 0;
-  background: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003381}}
-.overlay.small > div {
-  position: relative;
-  height: 7.5em;
-  margin-bottom: .5em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\0000391}}
+.insideblock li {
+  list-style-type: none;
+  text-align: left;
+  clear: both;
+  background: rgba(0, 0, 0, 0.1);
+  padding: .2em .3em;
+  margin-bottom: .3em;
+  font-size: .8em;
+  font-weight: bold;
+  color: #1f1f1f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003385}}
-.overlay.small > div:last-child {
-  margin-bottom: 0;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003101}}
+.insideblock li span {
+  float: right;
+  font-style: italic;
+  font-weight: 100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_blocks\.scss}line{font-family:\00003107}}
+.insideblock > div {
+  padding: 0 15px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\000031}}
@@ -1795,7 +1495,7 @@ footer .container:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000314}}
 .certifications {
   *zoom: 1;
   max-width: 67.7em;
@@ -1812,7 +1512,7 @@ footer .container:after {
   clear: both;
 }
 @media screen and (max-width: 45em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000317}}
   .certifications li {
     margin-bottom: .5em;
     text-align: center;
@@ -1822,7 +1522,7 @@ footer .container:after {
     margin-right: 6.54206%;
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000322}}
   .certifications li.ncua, .certifications li.atm {
     width: 46.72897%;
     float: right;
@@ -1832,7 +1532,7 @@ footer .container:after {
   }
 }
 @media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000328}}
   .certifications li {
     text-align: center;
     height: 36px;
@@ -1841,7 +1541,7 @@ footer .container:after {
     margin-right: 3.16742%;
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000332}}
   .certifications li.atm {
     width: 22.62443%;
     float: right;
@@ -1850,129 +1550,122 @@ footer .container:after {
     display: inline;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000337}}
 .certifications .visa {
   padding-right: 52px;
   background-position: 0 -36px;
   background-position-x: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000342}}
 .certifications .ncua {
   padding-right: 48px;
   background-position: 0 -72px;
   background-position-x: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000347}}
 .certifications .ehl {
   padding-right: 37px;
   background-position: 0 -108px;
   background-position-x: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000352}}
 .certifications .atm {
   padding-right: 44px;
   background-position: 0 0;
   background-position-x: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000357}}
 .certifications a {
   font-size: 12px;
   line-height: 10px;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000365}}
 .footernav {
   padding-top: .8em;
   padding-bottom: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000368}}
 .footernav > ul {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000371}}
 .footernav > ul > li > a {
   font-size: 1.2em;
   margin-bottom: .5em;
   color: #948779;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000378}}
 .footernav > ul ul {
   margin-top: .3em;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000381}}
 .footernav > ul ul li {
   line-height: 1.4;
 }
 @media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000381}}
   .footernav > ul ul li {
     display: inline-block;
     line-height: 1.2;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000384}}
   .footernav > ul ul li:after {
     font-size: .8em;
     content: "\2022";
     color: white;
     margin-left: .3em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000391}}
   .footernav > ul ul li:last-of-type:after {
     content: "";
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\0000398}}
 .footernav > ul ul a {
   font-size: .8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/design\/_footer\.scss}line{font-family:\00003103}}
 .footernav .opensecondary {
   display: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\000039}}
 body {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaa196), color-stop(100%, #c1bab2));
-  background: -webkit-linear-gradient(#aaa196, #c1bab2);
-  background: -moz-linear-gradient(#aaa196, #c1bab2);
-  background: -o-linear-gradient(#aaa196, #c1bab2);
-  background: -ms-linear-gradient(#aaa196, #c1bab2);
-  background: linear-gradient(#aaa196, #c1bab2);
-  margin-top: 0;
   overflow-x: hidden;
 }
 @media screen and (max-width: 35em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000313}}
   body:after {
     content: 'small';
     display: none;
   }
 }
 @media screen and (min-width: 36em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000319}}
   body:after {
     content: 'medium';
     display: none;
   }
 }
 @media screen and (min-width: 46em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000325}}
   body:after {
     content: 'large';
     display: none;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000333}}
 img {
   max-width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micahgodbolt\/Sites\/iqmock\/scss\/screen\.scss}line{font-family:\0000338}}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

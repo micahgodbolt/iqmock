@@ -6,6 +6,7 @@ footer {
     color: white;
   }
   .container {
+    $gutter-width: .7em;
     @include container;
   }
 }
@@ -85,7 +86,7 @@ footer {
             content: "\2022";
             color: white;
             margin-left: .3em;
-            
+
           }
           &:last-of-type:after {
             content: "";

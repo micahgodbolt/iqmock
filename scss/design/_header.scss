@@ -24,6 +24,9 @@ header {
         display: block;
         margin-top: .2em;
         font-size: .4em;
+        em {
+          display: none;
+        }
       }
       &:before {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -37,6 +40,7 @@ header {
     }
 
     @include respond-to('medium'){
+      //.icons
       a {
         padding: 0.35em 0;
         border-left: 1px solid rgba(0,0,0,.2);
@@ -50,15 +54,19 @@ header {
     @include respond-to('large') {
       & { //.icons
         position: absolute;
-        right: 0;
-        bottom: .1em;
+        right: .5em;
+        top: 5%;
       }
+
       a {
         width: 3em;
         font-size: 1.4em;
         border: none;
+        &:before {
+          display: none;
+        }
         span {
-          margin-top: .3em;
+          margin-top: 0;
           font-size: .5em;
         }
       }
@@ -67,6 +75,25 @@ header {
       }
       .icon-search {
         display: block;
+      }
+      .icon-login {
+        top: auto;
+        font-size: 1.5em;
+        // text-align: left;
+        color: $grey;
+        position: absolute;
+        bottom: -84%;
+        width: 100%;
+        background: white;
+        @include border-radius(.2em);
+        border: 1px solid $grey;
+        padding: .23em .6em;
+        cursor: text;
+        @include box-shadow(inset 0px 1px 9px #AAA);
+        em {
+          display: inline;
+          text-transform: none;
+        }
       }
      }
     //end icon styles

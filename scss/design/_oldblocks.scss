@@ -127,3 +127,447 @@
     font-weight: bold;
   }
 }
+
+
+
+article {
+  margin-bottom: .7em;
+  @include respond-to(upto-large) {
+    @include span-columns(6,12);
+    @include nth-omega('2n+1');
+  }
+  @include respond-to(small) {
+    @include span-columns(12,12);
+  }
+  @include respond-to(desktop) {
+    @include span-columns(4,12);
+    @include nth-omega('3n+1');
+  }
+
+  &.large {
+    @include respond-to(medium) {
+      @include span-columns(12,12);
+    }
+    @include respond-to(desktop) {
+      @include span-columns(8 omega,12);
+    }
+  }
+    &.equal.small {
+    padding: 0;
+    background: none;
+    > div {
+      height: 49%;
+      padding: .5em;
+      position: relative;
+      clear: both;
+      @include respond-to(desktop) {
+        height: 49%;
+      }
+      &:first-child {
+      margin-bottom: .7em;
+        @include respond-to(medium) {
+        margin-bottom: 2%;
+        }
+      }
+    }
+  }
+}
+
+body {
+  background: white !important;
+}
+
+
+
+.loanrates {
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    text-align: left;
+    clear: both;
+    background: rgba(255,255,255, .1);
+    padding: .2em .7em;
+    margin-bottom: .3em;
+    font-size: .8em;
+    font-weight: bold;
+    color: white;
+    span {
+      float: right;
+      font-style: italic;
+      font-weight: 100;
+    }
+    .imageleft &  {
+      color: darken($grey,40%);
+      background: rgba(0,0,0, .1);
+    }
+  }
+}
+
+
+
+
+.iconbox {
+  .button {
+    @include background-image(linear-gradient(top, lighten($red, 10%), darken($red,10%)));
+    display: inline-block;
+    color: white;
+    @include border-radius(5px);
+    @include box-shadow(inset 0px 1px 1px rgba(255,255,255,.4));
+    padding: .4em .6em .3em;
+    border: 1px solid darken($red, 10%);
+    text-shadow: -1px -1px 0 rgba(0,0,0,.4);
+    font-size: 1.2em;
+    line-height: 1;
+    margin-bottom: 1em;
+
+    &:hover {
+      @include background-image(linear-gradient(top, lighten($red, 5%), darken($red, 15%)));
+      text-shadow: 1px 1px 0 rgba(0,0,0,.6);
+      position: relative;
+      @include box-shadow(inset 0px 1px 1px rgba(0,0,0,.4));
+
+    }
+
+     &:after {
+      content: 'ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ';
+      font-family: fontello;
+      margin-left: .6em;
+    }
+  }
+  &.loanrates li {
+    color: $black;
+    background: lighten($grey, 20%);
+  }
+
+  @include respond-to(medium) {overflow: hidden;}
+  padding: .5em .5em;
+  //background: #1f1f1f;
+  text-align: center;
+  img {
+    height: 7em;
+    margin-top: .3em;
+  }
+  h3 {
+    color: $red;
+    margin-top: 0em;
+    margin-bottom: .3em;
+    font-weight: 100;
+    font-size: 1.8em;
+  }
+
+  h4 {
+    margin-top: 0;
+    color: $black;
+  }
+  p {
+    font-size: .9em;
+    color: $black;
+  }
+  &.small > div {
+    //background: #1f1f1f;
+    position: relative;
+    text-align: left;
+    img {
+      position: absolute;
+      left: 3%;
+      top: 6%;
+      width: 20%;
+      height: auto;
+      z-index: 100;
+      @include respond-to(medium) {
+        display: none;
+      }
+      @include respond-to(large) {
+        display: block;
+      }
+    }
+    .inside {
+      margin-left: 26%;
+      @include respond-to(medium) {
+        margin-left: 0;
+      }
+      @include respond-to(large) {
+        margin-left: 26%;
+      }
+    } //end small div
+    h3 {
+      font-size: 1.3em;
+      margin-bottom: .3em;
+    }
+    p {
+      margin-top: .3em;
+    }
+  }
+}
+//end iconbox style
+
+
+.imageleft {
+   .button {
+    @include background-image(linear-gradient(top, lighten($red, 5%), darken($red,10%)));
+    display: inline-block;
+    color: white;
+    @include box-shadow(
+      inset 1px 1px 1px rgba(255,255,255, .3),
+      0 2px 5px 1px rgba(0,0,0,.7));
+    padding: .6em .9em .5em;
+    border: 1px solid darken($red, 10%);
+    text-shadow: -1px -1px 0 rgba(0,0,0,.5);
+    font-size: 1.2em;
+    line-height: 1;
+    font-weight: 100;
+    margin-bottom: 1em;
+    &:hover {
+      text-shadow: 0 0 5px rgba(255,255,255,.5);
+      position: relative;
+      top: 1px;
+      @include box-shadow(
+      inset 1px 1px 1px rgba(255,255,255, .3),
+       inset 0 1px 1px 0px rgba(0,0,0,.5));
+    }
+    &:after {
+      content: '\2611';
+      font-family: fontello;
+      margin-left: .6em;
+    }
+  }
+  position: relative;
+  padding: 0 0 1em 0;
+  color: darken($grey, 40%);
+  background: white;
+ .rightimage {
+    max-height: 10em;
+  }
+  h3 {
+    font-weight: 100;
+    color: white;
+    background: $red;
+    margin: 0;
+    padding: .3em;
+    padding-left: 35%;
+    @include respond-to(medium) {
+     padding-left: 5%;
+    }
+     @include respond-to(large) {
+     padding-left: 35%;
+    }
+  }
+  h4 {
+    margin-top: .5em;
+  }
+  .rightimage {
+    float: right;
+  }
+  .sideimage{
+    background: url('http://www.marketingsavant.com/wp-content/uploads/banking_001.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 70%;
+    @include respond-to(medium) {
+      display: none;
+    }
+    @include respond-to(large) {
+      display: block;
+    }
+  }
+  .imageleft-inside {
+    margin-left: 35%;
+    margin-right: 5%;
+    @include respond-to(medium) {
+     margin-left: 5%;
+    }
+    @include respond-to(large) {
+     margin-left: 35%;
+    }
+    p {
+      margin-top: .5em;
+      font-size: .8em;
+    }
+  }
+  &.first .sideimage {
+    background-image: url('http://www.cordellpd.com/sites/default/files/online_banking.jpg')
+  }
+  & .second .sideimage{
+    background-image: url('http://static.ddmcdn.com/gif/isonlinebankingsafe1.jpg')
+  }
+  & .third .sideimage{
+    background-image: url('https://www.watrust.com/images/PersBank/InternetBanking.jpg');
+    background-size: 270%;
+    background-position: 80% 50%;
+  }
+  &.fourth .sideimage{
+    background-image: url('http://www.schullyroberts.com/images/2practiceareas/banking.jpg')
+  }
+
+  &.fifth .sideimage {
+    background-image: url('http://3.s3.envato.com/files/1450637/preview_image.jpg');
+  }
+
+  &.small.equal {
+    overflow: hidden;
+    background: none;
+    > div{
+      height: 49%;
+      padding: 0 0 .5em 0;
+      background: white;
+      position: relative;
+      margin-bottom: 1%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include respond-to(desktop) {
+        height: 49%;
+      }
+    }
+  }
+}
+// end image left style
+
+
+
+
+
+.overlay {
+  .button {
+    @include background-image(linear-gradient(top, lighten($grey, 20%), darken($grey,20%)));
+    display: inline-block;
+    color: darken($grey, 50%);
+    //@include border-radius(5px);
+    @include box-shadow(inset 0px 1px 1px rgba(255,255,255,.2), 1px 2px 4px rgba(0,0,0,.7));
+    padding: .4em .6em .3em;
+    border: 1px solid darken($grey, 10%);
+    text-shadow: 1px 1px 0 rgba(255,255,255,.5);
+    font-size: 1.2em;
+    line-height: 1;
+    font-weight: bold;
+    &:hover {
+      @include background-image(linear-gradient(top, lighten($grey, 10%), darken($grey,10%)));
+      position: relative;
+
+    }
+     &:after {
+      content: 'ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ';
+      font-family: fontello;
+      margin-left: .6em;
+    }
+  }
+  background: url('http://www.marketingsavant.com/wp-content/uploads/banking_001.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  padding: 15em .5em .5em 0;
+  color: white;
+  &.first {
+    background-image: url('http://www.cordellpd.com/sites/default/files/online_banking.jpg')
+  }
+  & .second {
+    background-image: url('http://static.ddmcdn.com/gif/isonlinebankingsafe1.jpg')
+  }
+  & .third {
+    background-image: url('https://www.watrust.com/images/PersBank/InternetBanking.jpg');
+    background-size: 120%;
+  }
+  &.fourth {
+    background-image: url('http://www.schullyroberts.com/images/2practiceareas/banking.jpg')
+  }
+  .overlay_background {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    left: 0;
+    padding: .5em .5em .5em .5em;
+    background: rgba(0,0,0,.8);
+  }
+
+  .rightimage {
+    float: right;
+  }
+
+  p {
+    font-size: .9em;
+  }
+  h3 {
+    color: #eee;
+    line-height: 1.20;
+    font-size: 1.1em;
+    margin: 0;
+    span {
+      display: block;
+      color: $red;
+      font-weight: bold;
+    }
+  }
+
+  &.small {
+    padding: 0;
+    background: none;
+    > div{
+      position: relative;
+      height: 7.5em;
+      margin-bottom: .5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// end overlay box style
+
+
+    .button2 {
+      text-align: center;
+    @include background-image(linear-gradient(top, lighten($grey, 20%), darken($grey,20%)));
+    display: block;
+    color: darken($grey, 50%);
+    //@include border-radius(5px);
+    @include box-shadow(inset 0px 1px 1px rgba(255,255,255,.2), 1px 2px 4px rgba(0,0,0,.7));
+    padding: .4em .6em .3em;
+    border: 1px solid darken($grey, 10%);
+    text-shadow: 1px 1px 0 rgba(255,255,255,.5);
+    font-size: 1.2em;
+    line-height: 1;
+    font-weight: bold;
+    &:hover {
+      @include background-image(linear-gradient(top, lighten($grey, 10%), darken($grey,10%)));
+
+    }
+     &:after {
+      content: '\2611';
+      font-family: fontello;
+      margin-left: .6em;
+    }
+  }
+
+     .button3 {
+      text-align: center;
+    @include background-image(linear-gradient(top, lighten($red, 5%), darken($red,10%)));
+    display: block;
+    color: white;
+    @include box-shadow(
+      inset 1px 1px 1px rgba(255,255,255, .3),
+      0 2px 5px 1px rgba(0,0,0,.7));
+    padding: .6em .9em .5em;
+    border: 1px solid darken($red, 10%);
+    text-shadow: -1px -1px 0 rgba(0,0,0,.5);
+    font-size: 1.2em;
+    line-height: 1;
+    font-weight: 100;
+    &:hover {
+      text-shadow: 0 0 5px rgba(255,255,255,.5);
+      bottom: 1px;
+      @include box-shadow(
+      inset 1px 1px 1px rgba(255,255,255, .3),
+       inset 0 1px 1px 0px rgba(0,0,0,.5));
+    }
+    &:after {
+      content: '\2611';
+      font-family: fontello;
+      margin-left: .6em;
+    }
+  }

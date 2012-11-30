@@ -7,9 +7,7 @@
 
 
 body {
-  @include background(linear-gradient(darken($grey,10%), $grey));
-  margin-top: 0;
-
+  //@include background(linear-gradient(darken($grey,10%), $grey));
   overflow-x: hidden;
   @include respond-to('small'){
     &:after {

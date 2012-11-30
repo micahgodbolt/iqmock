@@ -1,5 +1,6 @@
 .hero {
-
+  @include container;
+  margin: 0 auto;
   .slides li{
     height: 200px;
     background-size: cover;

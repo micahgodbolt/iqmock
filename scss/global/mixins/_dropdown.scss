@@ -28,6 +28,11 @@
     width: 30em;
     top: 3.75em;
   }
+  @include respond-to('large'){
+    right: 0;
+    width: 30em;
+    top: 1.7em;
+  }
 }
 
 %dropdown-active-icon {
