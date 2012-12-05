@@ -1,4 +1,4 @@
-.main article {
+.homeblock, .insideblock {
   $gutter-width: 2em;
   position: relative;
   margin-bottom: .7em;
@@ -7,28 +7,28 @@
   }
   @include respond-to(medium) {
     @include span-columns(6,12);
-    @include nth-omega('2n');
-
+    @include nth-omega(2n);
   }
   @include respond-to(large) {
     @include span-columns(3,12);
-    @include remove-nth-omega(2n);
-    @include nth-omega('4n');
+   @include remove-nth-omega(2n);
+   @include nth-omega(4n);
   }
     .button1 {
     text-align: center;
-    margin: 1em 0 .5em;
+    margin: 1em auto .5em;
     @include background-image(linear-gradient(top, lighten($red, 10%), darken($red,10%)));
     display: block;
     color: white;
     text-transform: uppercase;
     @include border-radius(5px);
     @include box-shadow(inset 0px 1px 1px rgba(255,255,255,.4));
-    padding: .4em 0;
+    padding: .2em 0;
     border: 1px solid darken($red, 10%);
     text-shadow: -1px -1px 0 rgba(0,0,0,.4);
-    font-size: 1.1em;
+    font-size: .9em;
     line-height: 1;
+    max-width: 12em;
 
     &:hover {
       @include background-image(linear-gradient(top, lighten($red, 5%), darken($red, 15%)));
@@ -83,6 +83,9 @@
     margin-top: 0;
     text-align: center;
     padding: .1em;
+  }
+  img {
+    max-width: 100%;
   }
   ul {
     margin: 0;

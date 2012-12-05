@@ -3,12 +3,13 @@
 
 $total-columns  : 12;             // a 12-column grid
 $gutter-width   : .7em;            // 1em gutters between columns
-$grid-padding   : 0;  // grid-padding equal to gutters
+$grid-padding   : .3em;  // grid-padding equal to gutters
 $column-width   : 5em;
+@include border-box-sizing;
 
 $black: #1F1F1F;
 $grey: #c1bab2;
 $red: #b5121b;
-$break-small: 35em;
+$break-small: 27em;
 $break-medium: 45em;
 $break-large: 71em;

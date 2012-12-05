@@ -15,4 +15,31 @@
   }
 }
 
+aside.primary {
+  @include respond-to(medium) {
+    @include span-columns(5 omega, 12, 0em, right);
+  }
+  @include respond-to(large) {
+    @include span-columns(3 omega,12,0em,right);
+  }
+}
+
+.pagecontent {
+  @include respond-to(medium) {
+    @include span-columns(7, 12);
+  }
+  @include respond-to(large) {
+    @include span-columns(9,12);
+    padding-right: 2%;
+  }
+}
+
+aside.secondary {
+  @include respond-to(medium) {
+    @include span-columns(5 omega, 12);
+  }
+  @include respond-to(large) {
+    @include span-columns(3 omega,12);
+  }
+}
 

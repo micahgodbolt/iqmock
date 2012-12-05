@@ -1,3 +1,4 @@
+
 @import "global/base";
 @import "styleguide/styleguide";
 @import "design/design";
@@ -35,8 +36,5 @@ img {
   height: auto;
 }
 
-* {
-  @include box-sizing(border-box);
-}
 
 
